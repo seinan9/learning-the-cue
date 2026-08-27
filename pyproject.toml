@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["learning_the_cue"]
+
+[project]
+name = "learning-the-cue"
+version = "0.1.0"
+requires-python = ">=3.13"
+description = "TODO"
+dependencies = [
+    "accelerate>=1.14.0",
+    "datasets>=5.0.1",
+    "numpy>=2.5.2",
+    "scikit-learn>=1.9.0",
+    "sentencepiece>=0.2.2",
+    "stanza>=1.14.0",
+    "tiktoken>=0.14.0",
+    "torch>=2.13.0",
+    "tqdm>=4.70.0",
+    "transformers>=5.15.1",
+    "wordfreq>=3.1.1",
+]
+
+[[project.authors]]
+name = "Sinan Kurtyigit"
+email = "sinan.kurtyigit@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/seinan9/learning-the-cue"
+
+[dependency-groups]
+dev = [
+    "argcomplete>=3.7.2",
+]
