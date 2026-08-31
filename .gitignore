@@ -9,6 +9,5 @@ __pycache__/
 .env
 
 # Data
-/data
-runs/
+*/runs/
 interactive/
